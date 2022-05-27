@@ -1,9 +1,5 @@
 # importing csv module
 import csv
-import os
-import glob
-
-
 
 # csv file name
 filename = "pokemon.csv"
@@ -25,7 +21,7 @@ with open(filename, 'r') as csvfile:
 		rows.append(row)
 
 	# get total number of rows
-	print("Total no. of rows: %d"%(csvreader.line_num))
+	#print("Total no. of rows: %d"%(csvreader.line_num))
 
 # printing the field names
 #print('Field names are:' + ', '.join(field for field in fields))
@@ -56,4 +52,3 @@ elif(letterChoice == "B"):
     qt = tt[tt['id'].notnull()]
     for i in qt.columns:
         print(i," : ",qt[i][idx1[0]])
-
